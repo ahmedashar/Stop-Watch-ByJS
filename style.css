@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    border-radius: 70px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 50vh;
+ width: 50vw;
+ background-color: rgb(28, 27, 27);
+ color: white;
+ border: 15px double #44D62C ;
+}
+.heading{
+     font-size: 50px;
+}
+.stopwatch{
+    display: flex;
+    /* justify-content: center; */
+}
+.stopwatch div{
+    font-size: 150px;
+    margin: 0px 20px;
+    border: 2px solid #44D62C;
+    padding: 4px 30px;
+    background-color: rgb(0, 0, 0);
+    color: #44D62C;
+    box-shadow: 0px 0px 10px 6px rgba(68,214,44,1);
+
+}
+.buttons{
+    margin-top: 30px;
+}
+.buttons button{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 27px;
+    /* border: 2px solid white; */
+    background-color: rgb(32, 31, 31);
+    color: white;
+    margin:40px 25px;
+    box-shadow: 0px 0px 0px 15px rgba(0,0,0,1);
+    transition: 0.5s;
+}
+button:hover{
+    color: #44D62C;
+    background-color:black ;
+ 
+}
+
+button:disabled{
+    color: #44D62C;
+    background-color: black;
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {     
+    .container{    
+        height: 50vh;
+        width: 80vw;
+    }
+}
